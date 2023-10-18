@@ -1,0 +1,173 @@
+*, body {
+    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --color-primary: #879b88;
+    --color-secondary: #ECEDE7;
+    --color-third: #454545;
+    background-color: var(--color-secondary);
+    padding: 5px;
+}
+
+/* FORM */
+
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0;
+}
+
+input, select{
+    border-radius: 10px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-third);
+    width: 50%;
+    outline: none;
+}
+
+input{
+    padding: 10px;
+}
+
+select{
+    padding: 9px;
+    flex-grow: 2;
+}
+
+button{
+    padding: 10px;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    flex-grow: 2;
+}
+
+button:hover{
+    background-color: var(--color-third);
+}
+
+#color-hex{
+    width: 55px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#color-hex::-webkit-color-swatch {
+  border-radius: 10px;
+  border: none;
+}
+
+#color-count{
+    width: 55px;
+}
+
+#column-1, #column-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 50%;
+}
+
+/* INTRODUCTION */
+
+#intro{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 50% 20% 70% 30%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+#intro-instructions{
+    background-color: transparent;
+    margin: 0 150px;  
+    width: 500px;
+    align-self: center;
+    
+}
+
+#intro h4{
+    padding: 0 70px;
+}
+
+#intro ol{
+  background-color: transparent;
+  padding: 0 70px;
+}
+
+#intro ol>li{
+  padding: 10px 0;
+  background-color: transparent;
+}
+
+h1, h4{
+    background-color: transparent;
+}
+
+/* COLOR SCHEME */
+
+#color-scheme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.scheme-unit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+    width: 90px;
+}
+
+.scheme-unit > div {
+    height: 150px;
+    border-radius: 10px;
+}
+
+h4{
+    margin: 10px 0;
+}
+
+@media (max-width: 500px) {
+    form {
+        flex-direction: column;
+    }
+    
+    #column-1, #column-2{
+        width: 100%;
+    }
+    
+    #intro{
+       padding: 50px;
+    }
+    
+    #intro h4 {
+        padding: 0 150px;
+    }
+    
+    #intro ol {
+        padding: 0 150px;
+    }
+}
+
+@media (min-width: 500px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+} 
