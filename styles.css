@@ -143,6 +143,13 @@ h4{
     margin: 10px 0;
 }
 
+@media (min-width: 500px) {
+    body {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+} 
+
 @media (max-width: 500px) {
     form {
         flex-direction: column;
@@ -164,10 +171,3 @@ h4{
         padding: 0 150px;
     }
 }
-
-@media (min-width: 500px) {
-    body {
-        max-width: 600px;
-        margin: 0 auto;
-    }
-} 

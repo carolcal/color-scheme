@@ -1,33 +1,38 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <form>
-            <div id="column-1">
-                <input id="color-hex" type="color" value="#454545">
-                <select id="select-mode">
-                    <option value="" disabled selected>Select Options</option>
-                </select>
-            </div>
-            <div id="column-2">
-                <input id="color-count" type="number" value="6" max="20">
-                <button id="get-color-btn">GET COLOR SCHEME</button>
-            </div>
-        </form>
-        <div id="intro">
-            <h1>COLOR SCHEME</h1>
-            <div id="intro-instructions">
-                <h4>Need help combining colors? You came to the right place! With color scheme you:</h4>
-                <ol>
-                    <li>Pick a color</li>
-                    <li>Select what type of combination you need</li>
-                    <li>Tell us how many color combination you want</li>
-                    <li>GET COLOR SCHEME!</li>
-                </ol>
-            </div>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <form>
+        <div id="column-1">
+            <input id="color-hex" type="color" value="#454545">
+            <select id="select-mode">
+                <option value="" disabled selected>Select Options</option>
+            </select>
         </div>
-        <div id="color-scheme"></div>
-        <script src="index.pack.js"></script>
-    </body>
+        <div id="column-2">
+            <input id="color-count" type="number" value="6" max="20">
+            <button id="get-color-btn">GET COLOR SCHEME</button>
+        </div>
+    </form>
+    <div id="intro">
+        <h1>COLOR SCHEME</h1>
+        <div id="intro-instructions">
+            <h4>Need help combining colors? You came to the right place! With color scheme you:</h4>
+            <ol>
+                <li>Pick a color</li>
+                <li>Select what type of combination you need</li>
+                <li>Tell us how many color combination you want</li>
+                <li>GET COLOR SCHEME!</li>
+            </ol>
+        </div>
+    </div>
+    <div id="color-scheme"></div>
+    <script src="index.pack.js"></script>
+</body>
+
 </html>
