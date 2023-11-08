@@ -7,7 +7,6 @@
     --color-fifth: #454545;
     background-color: var(--color-forth);
     padding: 5px;
-    margin: 0 auto;
 }
 
 /* FORM */
@@ -149,11 +148,15 @@ h4{
 @media (min-width: 500px) {
     body {
         max-width: 600px;
+        margin: 0 auto;
         
     }
 } 
 
 @media (max-width: 500px) {
+    body{
+        margin: 0 auto;
+    }
     form {
         flex-direction: column;
     }
