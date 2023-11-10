@@ -1,0 +1,32 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ (() => {
+
+eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nError: Plugin/Preset files are not allowed to export objects, only functions. In D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\babel-preset-react\\\\lib\\\\index.js\\n    at createDescriptor (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\config-descriptors.js:160:11)\\n    at createDescriptor.next (<anonymous>)\\n    at step (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:261:32)\\n    at evaluateAsync (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:291:5)\\n    at D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:44:11\\n    at Array.forEach (<anonymous>)\\n    at Function.async (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:43:15)\\n    at Function.all (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:216:13)\\n    at Generator.next (<anonymous>)\\n    at createDescriptors (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\config-descriptors.js:102:41)\\n    at createDescriptors.next (<anonymous>)\\n    at createPresetDescriptors (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\config-descriptors.js:96:17)\\n    at createPresetDescriptors.next (<anonymous>)\\n    at D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\config-descriptors.js:57:32\\n    at Generator.next (<anonymous>)\\n    at Function.<anonymous> (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\gensync-utils\\\\async.js:21:3)\\n    at Generator.next (<anonymous>)\\n    at step (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:269:25)\\n    at evaluateAsync (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:291:5)\\n    at Function.errback (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:113:7)\\n    at errback (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\gensync-utils\\\\async.js:66:18)\\n    at async (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:188:17)\\n    at onFirstPause (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:216:13)\\n    at Generator.next (<anonymous>)\\n    at cachedFunction (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\caching.js:52:46)\\n    at cachedFunction.next (<anonymous>)\\n    at mergeChainOpts (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\config-chain.js:351:34)\\n    at mergeChainOpts.next (<anonymous>)\\n    at chainWalker (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\config-chain.js:317:14)\\n    at chainWalker.next (<anonymous>)\\n    at buildRootChain (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\config-chain.js:57:36)\\n    at buildRootChain.next (<anonymous>)\\n    at loadPrivatePartialConfig (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\partial.js:72:62)\\n    at loadPrivatePartialConfig.next (<anonymous>)\\n    at loadPartialConfig (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\partial.js:115:25)\\n    at loadPartialConfig.next (<anonymous>)\\n    at step (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:269:25)\\n    at evaluateAsync (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:291:5)\\n    at D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:93:9\\n    at new Promise (<anonymous>)\\n    at async (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\gensync\\\\index.js:92:14)\\n    at stopHiding - secret - don't use this - v1 (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\errors\\\\rewrite-stack-trace.js:47:12)\\n    at Object.loadPartialConfigAsync (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\@babel\\\\core\\\\lib\\\\config\\\\index.js:34:85)\\n    at Object.loader (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\babel-loader\\\\lib\\\\index.js:109:30)\\n    at Object.<anonymous> (D:\\\\ESTUDOS\\\\PROGRAMACAO\\\\JAVASCRIPT\\\\color-scheme\\\\node_modules\\\\babel-loader\\\\lib\\\\index.js:39:12)\");\n\n//# sourceURL=webpack://project/./src/index.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/index.js"]();
+/******/ 	
+/******/ })()
+;

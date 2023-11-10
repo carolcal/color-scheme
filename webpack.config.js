@@ -1,6 +1,9 @@
+const path = require('path');
+
 module.exports = {
   "output": {
-    "filename": "[name].pack.js"
+    "filename": "main.js",
+    "path": path.resolve(__dirname, 'dist'),
   },
   "module": {
     "rules": [
@@ -20,6 +23,7 @@ module.exports = {
     ]
   },
   "entry": {
-    "index": "./index"
-  }
+    "index": "./src/index.js"
+  },
+  "mode": 'development',
 };

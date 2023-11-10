@@ -78,6 +78,7 @@ var selectMode = document.getElementById("select-mode");
 var countInput = document.getElementById("color-count");
 var getColorBtn = document.getElementById("get-color-btn");
 var intro = document.getElementById("intro");
+var schemeUnit = document.getElementById("scheme-unit");
 
 function generateSelectOptions() {
     var modes = ["monochrome", "monochrome-dark", "monochrome-light", "analogic", "complement", "analogic-complement", "triad", "quad"];
@@ -115,7 +116,7 @@ countInput.addEventListener("input", function () {
 });
 
 getColorBtn.addEventListener("click", function (e) {
-    console.log('button');
+    console.log('heeey');
     e.preventDefault();
     var hex = document.getElementById("color-hex").value.replace("#", "");
     selectMode.value = selectMode.value ? selectMode.value : "monochrome";
@@ -153,6 +154,9 @@ getColorBtn.addEventListener("click", function (e) {
         }
 
         intro.style.display = "none";
+    });
+    schemeUnit.addEventListener("click", function (e) {
+        console.log(e);
     });
 });
 

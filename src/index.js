@@ -1,8 +1,11 @@
+import _ from 'lodash';
+
 const colorScheme = document.getElementById("color-scheme")
 const selectMode = document.getElementById("select-mode")
 const countInput = document.getElementById("color-count")
 const getColorBtn = document.getElementById("get-color-btn")
 const intro = document.getElementById("intro")
+
 
 function generateSelectOptions(){
     const modes = ["monochrome", "monochrome-dark", "monochrome-light", "analogic", "complement", "analogic-complement", "triad", "quad"]
@@ -19,7 +22,7 @@ countInput.addEventListener("input", function () {
 })
 
 getColorBtn.addEventListener("click", (e) => {
-    console.log('button')
+    console.log('heeey')
     e.preventDefault()
     const hex = document.getElementById("color-hex").value.replace("#", "")
     selectMode.value = selectMode.value ? selectMode.value : "monochrome"
@@ -40,6 +43,20 @@ getColorBtn.addEventListener("click", (e) => {
         }
         intro.style.display = "none"
         })
+    
+    const h5Value = document.querySelector(".scheme-unit h5").textContent;
+    console.log(h5Value)
 })
 
 generateSelectOptions()
+
+function component() {
+    const element = document.createElement('div');
+  
+    // Lodash, now imported by this script
+    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  
+    return element;
+  }
+  
+  document.body.appendChild(component());
