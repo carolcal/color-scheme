@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import './styles/styles.css';
 
 const colorScheme = document.getElementById("color-scheme")
 const selectMode = document.getElementById("select-mode")
@@ -22,7 +23,6 @@ countInput.addEventListener("input", function () {
 })
 
 getColorBtn.addEventListener("click", (e) => {
-    console.log('heeey')
     e.preventDefault()
     const hex = document.getElementById("color-hex").value.replace("#", "")
     selectMode.value = selectMode.value ? selectMode.value : "monochrome"
@@ -35,27 +35,54 @@ getColorBtn.addEventListener("click", (e) => {
         .then(result => result.json())
         .then(data => { 
         for(const color of data.colors){
-            colorScheme.innerHTML += `
-                <div class="scheme-unit">
-                    <div style="background-color: ${color.hex.value};"></div>
-                    <h5>${color.hex.value}</h5>
-                </div>`  
+            const schemeUnit = document.createElement("div");
+                schemeUnit.className = "scheme-unit";
+                schemeUnit.addEventListener("click", () => {
+                    copyToClipboard(color.hex.value);
+                    showCopyFeedback(colorDiv);
+                });
+                
+                const colorDiv = document.createElement("div");
+                colorDiv.style.backgroundColor = color.hex.value;
+
+                const colorH5 = document.createElement("h5");
+                colorH5.textContent = color.hex.value;
+
+                schemeUnit.appendChild(colorDiv);
+                schemeUnit.appendChild(colorH5);
+
+                colorScheme.appendChild(schemeUnit);
         }
         intro.style.display = "none"
         })
-    
-    const h5Value = document.querySelector(".scheme-unit h5").textContent;
-    console.log(h5Value)
 })
+
+function copyToClipboard(text) {
+    const tempTextArea = document.createElement("textarea");
+    tempTextArea.value = text;
+    document.body.appendChild(tempTextArea);
+    tempTextArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempTextArea);
+
+} 
+
+function showCopyFeedback(element) {
+    const feedbackText = document.createElement("h6");
+    feedbackText.className = "copy-feedback";
+    feedbackText.textContent = "COPIED!";
+
+    element.appendChild(feedbackText);
+
+    setTimeout(() => {
+        element.removeChild(feedbackText);
+    }, 800);
+}
 
 generateSelectOptions()
 
 function component() {
     const element = document.createElement('div');
-  
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
     return element;
   }
   

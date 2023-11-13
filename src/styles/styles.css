@@ -1,10 +1,10 @@
 *, body {
-    --font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     --color-primary: #c61c6e;
     --color-secondary: #e4a676;
     --color-third: #5252a6;
     --color-forth: #ECEDE7;
     --color-fifth: #454545;
+    font-family: "Gill Sans Extrabold", sans-serif;
     background-color: var(--color-forth);
     padding: 5px;
 }
@@ -140,6 +140,15 @@ h1, h4{
 .scheme-unit > div {
     height: 150px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.copy-feedback{
+    border-radius: 50px;
+    padding: 10px;
 }
 
 h4{
