@@ -1,28 +1,22 @@
-# cW2yzpA8
+# Color Scheme 
 
-Quick start:
+## Description
 
-```
-$ yarn # npm install
-$ yarn build # npm run build
-````
+This project has been crafted to assist designers and developers to create their project palettes. In this application, users can select a base color, specify the desired color combination type, and indicate the number of colors they'd like the app to generate. Subsequently, the app transmits this information to an open API called "The Color API" and renders its response. Thenm users can conveniently copy the HEX values of the generated colors with a simple click.
 
-## Development
+You can access this project online at: https://master--color-scheme-carol.netlify.app/
 
-Run Webpack in watch-mode to continually compile the JavaScript as you work:
+## How to use in localhost
 
-```
-$ yarn watch # npm run watch
-```
+This project is made with webpack. After downloading the project you can run locally in your machine. 
 
-## About Scrimba
+### 01. Access the project folder on your terminal
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+### 02. Run `npm install`
+Install all the dependencies
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!
+### 03. Run `npm start`
+Runs the app in the development mode.
+In the terminal will shown the port it is running, click on the link on the terminal and access the localhost.
+The page will reload when you make changes.
+You may also see any lint errors in the console.
